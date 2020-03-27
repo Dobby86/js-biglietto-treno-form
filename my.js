@@ -13,7 +13,7 @@ var urKm = document.getElementById("km");
 
 //chiedere eta
 var urAge = document.getElementById("eta");
-// bottoni per generare  i dati con button
+// bottone per generare  i dati con genera
 var bottoneGenerator = document.getElementById("genera");
 
  bottoneGenerator.addEventListener("click",
@@ -25,7 +25,7 @@ var bottoneGenerator = document.getElementById("genera");
     console.log(putAge, putKm, putName);
 }
 );
-
+// bottone per generare  i dati con cancella
 var bottoneDelete = document.getElementById("cancella");
  bottoneDelete.addEventListener("click",
     function() {
@@ -35,3 +35,7 @@ var bottoneDelete = document.getElementById("cancella");
     console.log(putAge, putKm, putName);
 }
 );
+
+//ora bisogna far stampare sul biglietto i dati raccolti
+document.getElementById("nome").innerHTML= bottoneGenerator;
+console.log(putName);

@@ -7,16 +7,28 @@ body {
     background-color: lightblue;
 
 }
+[class*="col-"] {
+    float: left;
+    /* border: 1px solid black; */
+}
 
 h1 {
     color: red;
     text-align: center;
     font-size: 50px;
 }
-.container-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+h3 {
+    font-size: 30px;
+
+}
+.selettori {
     background-color: pink;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
