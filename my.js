@@ -23,7 +23,16 @@ var bottoneGenerator = document.getElementById("genera");
     var stampoTerzo = document.getElementById("prezzo");
     stampoPrimo.innerHTML = putName;
     //offerta
-    var
+    var offerta = document.getElementById("offerta");
+    offerta.innerHTML= urAge.value;
+    if (urAge.value <= 18) {
+        offerta.innerHTML = "sconto10";
+    }else if (urAge.value > 55) {
+        offerta.innerHTML = "sconto15";
+    }else {
+        offerta.innerHTML = "prezzo standard";
+    }
+    //
 
     console.log(putName, putKm, putAge);
 }
