@@ -14,23 +14,30 @@ var bottoneGenerator = document.getElementById("genera");
  bottoneGenerator.addEventListener("click",
 
     function() {
-    putName = urName.value;
-    putKm = urKm.value;
-    putAge = urAge.value;
-    console.log(putAge, putKm, putName);
+    var putName = urName.value;
+    var putKm = urKm.value;
+    var putAge = urAge.value;
+    var stampoPrimo = document.getElementById("passeggero");
+    var stampoSecondo = document.getElementById("");
+    //prezzo
+    var stampoTerzo = document.getElementById("prezzo");
+    stampoPrimo.innerHTML = putName;
+    //offerta
+    var
+
+    console.log(putName, putKm, putAge);
 }
 );
 // bottone per generare  i dati con cancella
 var bottoneDelete = document.getElementById("cancella");
  bottoneDelete.addEventListener("click",
     function() {
-    putName = "";
-    putKm = "";
-    putAge = "";
+    var putName = "";
+    var putKm = "";
+    var putAge = "";
+    //logghiamoli
     console.log(putAge, putKm, putName);
 }
 );
 
 //ora bisogna far stampare sul biglietto i dati raccolti
-document.getElementById("passeggero").innerHTML= ;
-console.log(urName);

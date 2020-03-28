@@ -7,9 +7,13 @@ body {
     background-color: lightblue;
 
 }
+
 [class*="col-"] {
     float: left;
-    /* border: 1px solid black; */
+
+}
+#passeggero {
+    color: black;
 }
 
 h1 {
