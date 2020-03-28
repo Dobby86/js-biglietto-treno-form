@@ -1,14 +1,9 @@
-// DESCRIZIONE:
-// Creo una versione dell’EX del biglietto del treno ricca con un bell’output dinamico;
-// Sulla base di quello visto insieme in aula, ma non per forza identico;
-// L’importante è usare eventi sui 2 bottoni principali, e sviluppare le logiche che sottendono;
-// “Genera” mi calcolerà il prezzo del biglietto a partire dai dati inseriti negli input, e mi draà l’output in pagina, nel modo migliore possibile;
-// “Annulla” mi fa tornare allo stato iniziale con output pulito (o nascosto) e campi puliti (non vale fare refresh del browser
+
 
 //chiedere nome e cognome
 var urName = document.getElementById("name");
 
-//chiedere km da percorrere
+// chiedere km da percorrere
 var urKm = document.getElementById("km");
 
 //chiedere eta
@@ -37,5 +32,5 @@ var bottoneDelete = document.getElementById("cancella");
 );
 
 //ora bisogna far stampare sul biglietto i dati raccolti
-document.getElementById("nome").innerHTML= bottoneGenerator;
-console.log(putName);
+document.getElementById("passeggero").innerHTML= ;
+console.log(urName);
