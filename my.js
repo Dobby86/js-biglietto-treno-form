@@ -14,6 +14,9 @@ var bottoneGenerator = document.getElementById("genera");
 
 
  bottoneGenerator.addEventListener("click",
+ // var ghost = document.getElementById("dasparire");
+ // ghost.style.color="initial";
+
 
     function() {
     var putName = urName.value;
@@ -67,12 +70,39 @@ var bottoneGenerator = document.getElementById("genera");
 var bottoneDelete = document.getElementById("cancella");
  bottoneDelete.addEventListener("click",
     function() {
-    var putName = "";
-    var putKm = "";
-    var putAge = "";
-    //logghiamoli
-    console.log(putAge, putKm, putName);
+        //random carrozza
+                var carrozza = document.getElementById("carrozza");
+                carrozza.innerHTML = "";
+
+                //random cp
+
+                var randomCp=document.getElementById("cp");
+                randomCp.innerHTML= "";
+
+
+        var offerta = document.getElementById("offerta");
+        offerta.innerHTML="";
+
+        var stampoPrimo = document.getElementById("passeggero");
+            stampoPrimo.innerHTML = "";
+
+            var stampoSecondo = document.getElementById("prezzo");
+            stampoSecondo.innerHTML="";
+
+            //da sparire i titoli
+
+            var ghost = document.getElementById("sparire");
+            ghost.innerHTML="";
+            var ghost = document.getElementById("sparire2");
+            ghost.innerHTML="";
+            var ghost = document.getElementById("sparire3");
+            ghost.innerHTML="";
+
+
+
 }
 );
+
+
 
 //ora bisogna far stampare sul biglietto i dati raccolti
