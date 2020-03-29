@@ -11,6 +11,8 @@ var urAge = document.getElementById("eta");
 // bottone per generare  i dati con genera
 var bottoneGenerator = document.getElementById("genera");
 
+
+
  bottoneGenerator.addEventListener("click",
 
     function() {

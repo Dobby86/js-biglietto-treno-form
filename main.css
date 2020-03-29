@@ -5,6 +5,9 @@
 }
 body {
     background-color: lightblue;
+    /* background-image: url(https://www.sap-nazionale.org/2016/wp-content/uploads/trenitalia-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; */
 
 }
 
@@ -17,22 +20,35 @@ body {
 }
 
 h1 {
-    color: red;
+    color: blue;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 h2 {
-    color: red;
+    color: blue;
     text-align: center;
     font-size: 50px;
 }
 h3 {
     font-size: 30px;
+    color: blue;
+    text-align: center;
 
 }
 .selettori {
-    background-color: pink;
+    background-color: orange;
     height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.selettori2 {
+    background-color: orange;
+    /* height: 100px; */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.titolo {
+    background-color:orange;
     margin-top: 50px;
     margin-left: 50px;
 }
