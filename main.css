@@ -19,10 +19,15 @@ button {
     width: 90px;
     padding: 3px;
     margin-top: 5px;
+    background-color: lightblue;
 }
 input {
     border-radius:10%;
     padding: 3px;
+    background-color: gold;
+}
+input:hover {
+    background-color: orange;
 }
 #passeggero {
     color: black;
