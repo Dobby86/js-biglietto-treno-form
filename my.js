@@ -22,16 +22,29 @@ var bottoneGenerator = document.getElementById("genera");
         stampoPrimo.innerHTML = putName;
 //random carrozza
         var carrozza = document.getElementById("carrozza");
-        carrozza.innerHTML = Math.floor((Math.random("a caso")* 30) );
+        carrozza.innerHTML = Math.floor((Math.random("a caso") * (100-30)) );
+
+        //random cp
+
+        var randomCp=document.getElementById("cp");
+        randomCp.innerHTML= Math.floor((Math.random("a caso") * (10000-3000)+100) );
+
 
 //
     var stampoSecondo = document.getElementById("prezzo");
     stampoSecondo.innerHTML= urKm.value;
 
-    if (urKm.value <200) {
-        stampoSecondo.innerHTML= (offerta * urKm)/100;
+    if (urAge.value <= 18) {
+
+        stampoSecondo.innerHTML= "euro " + (urKm.value  - ((10 * urKm.value)/100));
+    }else if (urAge.value > 55) {
+        stampoSecondo.innerHTML= "euro " + (urKm.value  - ((15 * urKm.value)/100));
+    }else {
+        stampoSecondo.innerHTML= "euro " + (1 * urKm.value);
 
     }
+
+
     //offerta
     var offerta = document.getElementById("offerta");
     offerta.innerHTML= urAge.value;
@@ -47,6 +60,7 @@ var bottoneGenerator = document.getElementById("genera");
     console.log(putName, putKm, putAge);
 }
 );
+
 // bottone per generare  i dati con cancella
 var bottoneDelete = document.getElementById("cancella");
  bottoneDelete.addEventListener("click",
